@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch ,Redirect} from 'react-router-dom';
 import Home  from './components/home/Home';
 import Blogs from './components/home/Blogs';
 import SignIn  from './components/home/SignIn';
@@ -10,6 +10,10 @@ import CourseSpecification from "./components/home/CourseSpecification";
 import Navbar from "./components/comman/navbar";
 import Footer from "./components/comman/Footer";
 
+// Dashoboard Page Imports
+import Dashboardpage from "./components/dashboard/Dashboardpage"
+import Profilepage from "./components/profile/Profilepagee"
+
 function App() {
   return (
     <React.Fragment>
@@ -17,11 +21,15 @@ function App() {
     <Navbar/>
    <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/Blogs" component={Blogs} />
-      <Route path="/signIn" exact component={SignIn} />
+      <Route path="/profile" component={Profilepage} />
+      <Route path="/signup" exact component={SignIn} />
+      <Route path="/login" exact component={SignIn} />
       <Route path="/Contact" exact component={Contact} />
       <Route path="/CourseSpecification" exact component={CourseSpecification} />
-      <Route path="/home" component={Home} />
+      <Route path="/dashboard" component={Dashboardpage} />
+      <Route exact path="/home">
+        <Redirect to="/dashboard" />
+      </Route>
    </Switch>
     <Footer/>
     </Router>

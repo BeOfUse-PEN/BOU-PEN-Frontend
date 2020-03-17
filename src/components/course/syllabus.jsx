@@ -1,11 +1,11 @@
 import React from 'react';
 
-function App() {
-  return (
-    <React.Fragment>
-        <h1>Fuckk OFF From here ...</h1>
-    </React.Fragment>
-  );
+function syllabus() {
+	return (
+		<React.Fragment>
+			<h1>Fuckk OFF From here ...</h1>
+		</React.Fragment>
+	);
 }
 
-export default App;
+export default syllabus;
