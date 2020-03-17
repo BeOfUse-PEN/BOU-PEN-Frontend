@@ -13,6 +13,7 @@ import Footer from "./components/comman/Footer";
 // Dashoboard Page Imports
 import Dashboardpage from "./components/dashboard/Dashboardpage"
 import Profilepage from "./components/profile/Profilepagee"
+import Coursepage from "./components/course/coursepage"
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
       <Route path="/signup" exact component={SignIn} />
       <Route path="/login" exact component={SignIn} />
       <Route path="/Contact" exact component={Contact} />
-      <Route path="/CourseSpecification" exact component={CourseSpecification} />
+      <Route path="/CourseSpecification" exact component={Coursepage} />
       <Route path="/dashboard" component={Dashboardpage} />
       <Route exact path="/home">
         <Redirect to="/dashboard" />
