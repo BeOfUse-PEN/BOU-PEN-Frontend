@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch ,Redirect} from 'react-router-dom';
 import Home  from './components/home/Home';
 import Blogs from './components/home/Blogs';
-import SignIn  from './components/home/SignIn';
+
 import Contact  from './components/home/Contact';
 import CourseSpecification from "./components/home/CourseSpecification";
 
@@ -14,6 +14,10 @@ import Footer from "./components/comman/Footer";
 import Dashboardpage from "./components/dashboard/Dashboardpage"
 import Profilepage from "./components/profile/Profilepagee"
 import Coursepage from "./components/course/coursepage"
+import SignIn  from './components/userdetails/SignIn';
+import Login from './components/userdetails/Login';
+
+
 
 function App() {
   return (
@@ -24,7 +28,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/profile" component={Profilepage} />
       <Route path="/signup" exact component={SignIn} />
-      <Route path="/login" exact component={SignIn} />
+      <Route path="/Login" exact component={Login} />
       <Route path="/Contact" exact component={Contact} />
       <Route path="/CourseSpecification" exact component={Coursepage} />
       <Route path="/dashboard" component={Dashboardpage} />
