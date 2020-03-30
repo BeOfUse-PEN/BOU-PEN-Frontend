@@ -16,7 +16,7 @@ import Profilepage from "./components/profile/Profilepagee"
 import Coursepage from "./components/course/coursepage"
 import SignIn  from './components/userdetails/SignIn';
 import Login from './components/userdetails/Login';
-
+import Allcourses from "./components/CoursesBulk/Allcourses"
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
       <Route path="/Login" exact component={Login} />
       <Route path="/Contact" exact component={Contact} />
       <Route path="/CourseSpecification" exact component={Coursepage} />
+      <Route path="/allcourses" exact component={Allcourses} />
       <Route path="/dashboard" component={Dashboardpage} />
       <Route exact path="/home">
         <Redirect to="/dashboard" />

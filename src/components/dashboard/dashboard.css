@@ -110,3 +110,11 @@
   .nost{
       list-style: none;
   }
+
+  .row > h3{
+    margin: 0 50px;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
