@@ -21,12 +21,25 @@ const Navbar = () => {
     <div className="row pull-right mx-3">
     <ul className="navbar-nav">
       
-      <li className="nav-item">
-        <NavLink className="nav-link" to="/signup"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}><Button className="btn btn-warning">SignUp</Button></NavLink>
-      </li>
-      <li className="nav-item">
-        <NavLink className="nav-link" to="/login"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}><Button className="btn btn-success">Login</Button></NavLink>
-      </li>
+    <div className="btn-group">
+      <button type="button" className="btn btn-outline-primary text-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Logged In
+      </button>
+      <div className="dropdown-menu">
+        <a className="dropdown-item" href="#">
+            <img src="https://via.placeholder.com/150/000000/FFFFFF/?text=Profile-Pic" alt="Thumbanail" className="w-50 m-auto"/>
+        </a>
+        <a className="dropdown-item" href="#">My Profile</a>
+        <a className="dropdown-item" href="#">My courses</a>
+        <a className="dropdown-item" href="#">Give and Take</a>
+        <div className="dropdown-divider"></div>
+        <a className="dropdown-item" href="#">
+            <button className="btn btn-success">
+                Logout
+            </button>
+        </a>
+      </div>
+    </div>
 
       </ul>
       </div>
@@ -40,7 +53,7 @@ const Navbar = () => {
     <ul className="navbar-nav">
       
       <li className="nav-item">
-        <NavLink className="nav-link" to="/signup"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}><Button className="">View Free Courses</Button></NavLink>
+        <NavLink className="nav-link" to="/allcourses"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}><Button className="">View Free Courses</Button></NavLink>
       </li>
 
       </ul>
