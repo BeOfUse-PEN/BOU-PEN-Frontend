@@ -17,7 +17,7 @@ import Coursepage from "./components/course/coursepage"
 import SignIn  from './components/userdetails/SignIn';
 import Login from './components/userdetails/Login';
 import Allcourses from "./components/CoursesBulk/Allcourses"
-
+import Givetake from "./components/GiveTake/Givetake";
 
 function App() {
   return (
@@ -32,6 +32,7 @@ function App() {
       <Route path="/Contact" exact component={Contact} />
       <Route path="/CourseSpecification" exact component={Coursepage} />
       <Route path="/allcourses" exact component={Allcourses} />
+      <Route path="/give-n-take" exact component={Givetake} />
       <Route path="/dashboard" component={Dashboardpage} />
       <Route exact path="/home">
         <Redirect to="/dashboard" />
