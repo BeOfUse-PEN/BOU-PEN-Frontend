@@ -5,6 +5,8 @@ import { Button } from 'react-bootstrap';
 
 const Navbar = () => {
     return(
+      <React.Fragment>
+
   <nav className="navbar navbar-expand-lg navbar-light bg-dark" style={{ fontFamily: "Comic Sans MS"}}>
   <Link className="navbar-brand" to="#" style ={{fontWeight: "bold",fontFamily:"Comic Sans MS", color: "white"}}>P.E.N</Link>
 
@@ -30,6 +32,30 @@ const Navbar = () => {
       </div>
     </div>
     </nav>
+    
+  <nav className="navbar navbar-expand-lg navbar-light bg-dark" style={{ fontFamily: "Comic Sans MS"}}>
+  <div className="collapse navbar-collapse justify-content-center text-white" id="navbarSupportedContent">
+
+  <div className="row mx-3">
+    <ul className="navbar-nav">
+      
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/signup"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}><Button className="">View Free Courses</Button></NavLink>
+      </li>
+
+      </ul>
+      </div>
+    <h5>I want to become </h5>
+    <select className="form-control w-25 m-2" id="sel1">
+      <option>Artist</option>
+      <option>Programmer</option>
+      <option>Businessman</option>
+      <option>Enterpreneur</option>
+    </select>
+
+    </div>
+    </nav>
+    </React.Fragment>
     );
     };
     export default Navbar;
