@@ -18,13 +18,6 @@ const Navbar = () => {
 
     <div className="row pull-right mx-3">
     <ul className="navbar-nav">
-      <li className="nav-item active">
-        <NavLink className="nav-link" to="/Home"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}><Button className="btn btn-primary">Dashboard <span className="sr-only">(current)</span></Button></NavLink>
-      </li>
-
-      <li className="nav-item">
-        <NavLink className="nav-link" to="/profile"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}><Button className="btn btn-primary">Profile <span className="sr-only">(current)</span></Button></NavLink>
-      </li>
       
       <li className="nav-item">
         <NavLink className="nav-link" to="/signup"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}><Button className="btn btn-warning">SignUp</Button></NavLink>
@@ -41,22 +34,12 @@ const Navbar = () => {
     };
     export default Navbar;
     /*
-    <li className="nav-item">
-        <NavLink className="nav-link" to="/Blogs"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}>Blogs</NavLink>
+      
+      <li className="nav-item active">
+        <NavLink className="nav-link" to="/Home"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}><Button className="btn btn-primary">Dashboard <span className="sr-only">(current)</span></Button></NavLink>
       </li>
 
-           <li className="nav-item">
-        <NavLink className="nav-link" to="/Contact"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}>Contact</NavLink>
-      </li>
-      <li className="nav-item dropdown">
-      
-        <NavLink className="nav-link dropdown-toggle" to="MyCourses" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}>
-         CourseSpecification
-        </NavLink>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <NavLink className="dropdown-item" to="CourseSpecification">All courses</NavLink>
-          <NavLink className="dropdown-item" to="CourseSpecification">My Courses</NavLink>
-          <div className="dropdown-divider"></div>
-        </div>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/profile"style ={{fontWeight: "bold,",fontFamily:"Comic Sans MS", color: "white"}}><Button className="btn btn-primary">Profile <span className="sr-only">(current)</span></Button></NavLink>
       </li>
     */
